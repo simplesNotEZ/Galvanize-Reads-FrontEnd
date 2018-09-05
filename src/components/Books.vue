@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         getData(){
-            fetch('http://localhost:9000/books')
+            fetch('https://gal-rds.herokuapp.com/books')
             .then(response => {
                 console.log("the response from books fetch: ", response);
                 return response.json();
